@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+			body {
+			  margin: 0;
+			  font-family: Arial, Helvetica, sans-serif;
+			  }
+			/*--------------NAvigation---------------------*/
+			.topnav {
+			  overflow: hidden;
+			  background-color: #333;
+			  font-family: Georgia, sans-serif;
+			}
+.topnav1
+{
+	margin-left: 450px;
+	margin-top: -28px;
+}
+			.topnav1 a  {
+			  float: left;
+			  color: #fff;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  font-size: 17px;
+
+			}
+
+			.topnav1 a:hover {
+			  color: #ffa500;
+			}
+
+	         .topnav img{
+	         margin-left: 20px;
+	         	padding-top: 20px;
+	         }		
+	         
+			/*----------------login button-----------*/
+
+			.button {
+			  border-radius: 4px;
+			  background-color: #ffa500;
+			  border: none;
+			  text-align: left;
+			  font-size: 14px;
+			  padding: 10px;
+			  width: 140px;
+			  transition: all 0.5s;
+			  cursor: pointer;
+			  margin: 5px;
+			  margin-left: 100px;
+			}
+
+			.button span {
+			  cursor: pointer;
+			  display: inline-block;
+			  position: relative;
+			  transition: 0.5s;
+			}
+
+			.button span:after {
+			  content: '\00bb';
+			  position: absolute;
+			  opacity: 0;
+			  top: 0;
+			  right: -20px;
+			  transition: 0.5s;
+			}
+
+			.button:hover span {
+			  padding-right: 25px;
+			}
+
+			.button:hover span:after {
+			  opacity: 1;
+			  right: 0;
+			} 
+
+
+/*---------------------------Post-----------------------*/
+
+.post img{
+	height: 653px;
+	width: 800px;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #333;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ffa500;
+}
+.col2{
+	height: 653px;
+	margin-left: 800px;
+	width: 736px;
+	background-color: #18191b;
+}
+.container {
+   position: absolute;
+  right: 0;
+  margin-top: 50px;
+margin-right: 150px;
+  width: 400px;
+  padding: 10px;
+  background-color: white;
+}
+h1{
+	font-family:Georgia, sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	width: 8em;
+}
+label{
+margin-right: 5px;
+position: absolute;
+	margin-left: 5px;
+}
+		</style>
+
+</head>
+<body>
+<!------------Navigation---------------------------->
+			<div class="topnav">
+				<img src="logo.png">
+<div class="topnav1">
+			  <a href="home.html">Home</a>
+			  <a href="about.html">About Us</a>
+			  <a href="service.html">Services Providers</a>
+			  <a href="service.html">Dashboard</a>
+			  <a href="feedback.html">Feedback</a>
+			  <a href="contact.html">Contact Us</a>
+</div>
+
+			<button class="button"><span>Register/Login </span></button>
+			
+			</div>
+
+<!---------------------------Post----------------------------->
+	<div class="post">
+		<img src="img_5.jpg">
+	</div>
+	<div class="col2">
+
+<div class="container">
+	<h1><center>Post Job Here</center></h1>
+
+  <form action="/action_page.php">
+    <label for="fname">Material Type</label>
+    <input type="text" id="fname" name="firstname" placeholder="Material Type.."><br>
+
+
+    <label for="lname">Date</label>
+    <input type="text" id="lname" name="Date" placeholder="Date..">
+<br>
+
+<label for="country">Mode of Transport</label>
+    <select id="mode" name="mode">
+      <option value="Select">Select</option>
+
+      <option value="Roadways">RoadWays</option>
+      <option value="Airways">Airways</option>
+      <option value="waterways">Waterways</option>
+    </select>
+   <br>
+    <label for="country">Pickup City</label>
+    <select id="country" name="country">
+    	      <option value="select">Select</option>
+
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+<br>
+    <label for="country">Drop City</label>
+    <select id="country" name="country">
+    	    	      <option value="select">Select</option>
+
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+<br><center>
+    <input type="submit" value="Submit"></center>
+  </form>
+</div>
+</div>
+
+
+</body>
+</html></h1>
